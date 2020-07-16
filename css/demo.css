@@ -1,0 +1,107 @@
+html, body, section {
+    height: 100%;
+}
+
+body {
+    color:white; ;
+    text-align: center;
+
+}
+
+.container {
+    display: flex;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left {
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(255,255,255,0.10)),
+        url(../images/contoh9.jpg);
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    padding: 1rem;
+    transition: all .2s ease-in-out;
+}
+
+.right {
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(164,222,102, 0.10)),
+        url(../images/contoh8.jpg);
+        background-size: cover;
+        background-position: center;
+    flex: 1;
+    padding: 1rem;
+    transition: all .2s ease-in-out;
+}
+
+.left:hover, .right:hover {
+    transform: scale(0.95);
+}
+
+.left h1 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 4rem;
+}
+
+.right h1 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 4rem;
+}
+
+.button {
+    border-radius: 30px;
+    color: white;
+    background-color: #fd7300;
+    padding: 1.5%;
+    margin: 0 2%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 150px;
+}
+
+.button:hover {
+    background: #fcc567;
+    color: black;
+}
+
+body {
+    background: #000;
+    font-size: 6px;
+}
+.neon {
+    font-family: 'Londrina Outline', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 8.5em;
+    color: #fff;
+    letter-spacing: 0.15em;
+}
+.pink {
+    text-shadow:
+        0 0 5px #fd7505,
+        0 0 10px #fd7505,
+        0 0 20px #fd7505,
+        0 0 40px #fd7505,
+        0 0 80px red,
+        0 0 90px red,
+        0 0 100px red,
+        0 0 150px red;
+}
+
+
+
+
+
+
+
+
+

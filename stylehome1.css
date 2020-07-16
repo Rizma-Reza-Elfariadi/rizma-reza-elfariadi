@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'WorkSans-Regular';
+    src: url('./assets/fonts/WorkSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'WorkSans-Bold';
+    src: url('./assets/fonts/WorkSans-Bold.ttf');
+}
+@font-face {
+    font-family: 'WorkSans-Thin';
+    src: url('./assets/fonts/WorkSans-Thin.ttf');
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #2C3E50;
+    overflow-x: hidden;
+    font-family: 'WorkSans-Regular';
+    transition: all 200ms ease-in-out;
+}
+.container {
+    padding: 1em;
+    background-color: #000;
+    height: auto;
+    min-height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background: linear-gradient(65deg, rgba(128,0,0) 24%, black 60%), url('./assets/images/home6.png') no-repeat center;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 3em;
+    width: 95%;
+}
+
+.header .brand {
+    font-size: 2em;
+    color: #FFF;
+    text-decoration: none;
+    font-family: 'WorkSans-Bold';
+}
+.header .menu {
+    list-style-type: none;
+    display: inline-flex;
+    font-family: 'WorkSans-Thin';
+    margin: 0px;
+    padding: 0px;
+    direction: rtl;
+}
+.header .menu > a {
+    text-decoration: none;
+    color: #FFF;
+    margin: 0 1em;
+}
+
+.tagline {
+    margin: 0px;
+    margin-top: 1em;
+    color: #FFF;
+    font-size: 7em;
+    font-family: 'WorkSans-Bold';
+    text-shadow:5px 0px 50px rgb(255,144,0);
+}
+.subtag {
+    margin: 0px;
+    color: #EEE;
+}
+
+.karakter-page {
+    padding: 1em;
+    width: 70%;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2em;
+    margin-top: 50px;
+}
+.karakter-page .card {
+    border-radius: 10px;
+    background-color: #FFF;
+    box-shadow: 10px 10px 10px rgba(0,0,0,2);
+}
+.karakter-page .cover {
+    height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    transition: all 200ms ease-in-out;
+}
+.karakter-page .footer {
+    font-family: 'WorkSans-Regular';
+    padding: 1em;
+    text-align: center;
+}
+.btn-explore {
+    background-color: #F80;
+    padding: 1em 3em;
+    color: #EEE;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.karakter-page a {
+    text-decoration: none;
+    color: #F39C12;
+}
+
+.karakter-page a:hover > .card {
+    transform: scale(1.2, 1.2);
+    transition: all 200ms ease-in-out;
+}
+
+.split-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1em;
+    width: 97%;
+}
+.split-sub-menu {
+    text-align: center;
+    min-height: 400px;
+    width: 100%;
+    position: relative;
+    flex: 1;
+}
+.split-sub-menu > div {
+    text-align: center !important;
+    width: 100%;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    display: block;
+    background-size: cover;
+    transition: all 200ms ease-in-out;
+}
+.split-sub-menu > div > div {
+    margin-top: 2em;
+}
+.split-sub-menu > div:hover {
+    box-shadow: 20px 40px 10px rgba(255, 255, 255, .2);
+    transition: all 200ms ease-in-out;
+    transform: translate3d(1em, 1em, 1em);
+}
+.split-menu > .split-sub-menu > div.left {
+    background: linear-gradient(65deg, rgba(29,25,28,.4) 24%, rgba(80,52,10,.4) 30%), url('assets/images/contoh4.jpg') no-repeat center;
+    background-size: cover;
+}
+.split-menu > .split-sub-menu:last-child > div.right {
+    background: linear-gradient(65deg, rgba(29,25,28,.4) 24%, rgba(80,52,10,.4) 30%), url('assets/images/contoh3.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.split-sub-menu > div > h1 {
+    margin: 0px;
+    color: #FFF;
+    text-align: center;
+    font-size: 5em;
+}
+
+.judul h1 {
+    color: #EEE;
+    text-align: center;
+    font-size: 4em;
+    font-family: 'WorkSans-Bold';
+    text-shadow: 5px 5px 10px rgba(241, 137, 45, .9)
+}
+
+/*
+HALAMAN ABOUT US
+*/
+.about-page {
+    padding: 2em;
+    width: 90%;
+    border-radius: 10px;
+    background-color: #FFF;
+}
+
+/*
+FOR MOBILE
+*/
+@media (max-width: 700px) {
+    .container {
+        width: auto;
+    }
+    .header {
+        display: block;
+        text-align: center;
+        font-size: 1em;
+        padding: 0px;
+    }
+    .header .menu > a {
+        font-size: .5em;
+    }
+
+    .tagline {
+        font-size: 3em;
+    }
+    .karakter-page {
+        width: 80%;
+        margin: 0 auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .karakter-page .cover {
+        height: 10em;
+    }
+    .karakter-page .footer {
+        font-size: .7em;
+    }
+}

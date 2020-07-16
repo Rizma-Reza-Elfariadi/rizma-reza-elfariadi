@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us</title>
+    <link rel="stylesheet" href="./styleaboutus.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+
+            <ul class="menu">
+              
+                <a href="home.html">
+                    <li>Home</li>
+                </a>
+                <a href="karakter-awal.html">
+                    <li>Character</li>
+                </a> 
+                <a href="movie.html">
+                    <li>Movie Title</li>
+                </a> 
+                <a href="AboutUs.html">
+                    <li>About Us</li>
+                </a> 
+            </ul>
+        </div>
+       
+        <center>
+            <h1 class="tagline">ABOUT US</h1>
+            <h2 class="subtag">- The Whole of Our Heart -</h2>
+        </center>
+    </div>
+     <div class="karakter-page">
+            <div class="card">
+                <div class="cover" style="background-image: url('./assets/images/Reza.jpg');"></div>
+                <div class="footer">
+                    Rizma Reza Elfariadi
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cover" style="background-image: url('./assets/images/kurnia.jpg');"></div>
+                <div class="footer">
+                    Kurnia Hidayati
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cover" style="background-image: url('./assets/images/warawandanu.jpeg');"></div>
+                <div class="footer">
+                    Warawandanu
+                </div>
+            </div>
+ <footer>         
+<div class="col-6 col-s-9">
+<h1>About Us</h1>
+<p>Kami adalah mahasiswa Universitas Amikom Yogyakarta, Prodi S1 Informatika</p>
+</div>
+</div>
+<div class="footer">
+<p>Contact Us</p><right>
+ <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  <input type="text" name="fname">
+  <input type="submit" value="Submit">
+</form></right>
+<section class="feature-list small">
+                                        <div class="row">
+                                            <div class="col-6 col-12-small">
+                                                <section>
+                                                    <h3>Mailing Address</h3>
+                                                    <p>
+                                                        Ringroud Utara,
+                                                        <br /> Condong Catur
+                                                        <br />
+                                                        Yogyakarta
+                                                    </p>
+                                                </section>
+                                            </div>
+                                            <div class="col-6 col-12-small">
+                                                <section>
+                                                    <h3>Social</h3>
+                                                    <p>
+                                                        <a href="https://www.facebook.com/reza.elfariadi/">facebook</a><br />
+                                                        <a href="https://twitter.com/rezaelfariadi2">twitter</a><br />
+                                                        <a href="https://www.instagram.com/reza_elfariadi/">instagram</a>
+                                                    </p>
+                                                </section>
+                                            </div>
+                                            <div class="col-6 col-12-small">
+                                                <section>
+                                                    <h3>Email</h3>
+                                                    <p>
+                                                        <a href="#">rizma.elfariadi@students.amikom.ac.id</a>
+                                                        <a href="#">kurnia.h@students.amikom.com</</a>
+                                                            <a href="#">warawandanu.2302@students.amikom.ac.id</a>
+                                                    </p>
+                                                </section>
+                                            </div>
+                                            <div class="col-6 col-12-small">
+                                                <section>
+                                                    <h3>Phone</h3>
+                                                    <p>
+                                                        0888-6674-525 <br>
+                                                        0878-3985-2089 <br>
+                                                        0822-7930-7980
+                                                    </p>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+</footer>  
+    <script src="./main.js"></script>
+</body>
+</html>

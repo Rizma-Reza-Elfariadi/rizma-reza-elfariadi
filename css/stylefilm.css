@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'WorkSans-Regular';
+    src: url('./assets/fonts/WorkSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'WorkSans-Bold';
+    src: url('./assets/fonts/WorkSans-Bold.ttf');
+}
+@font-face {
+    font-family: 'WorkSans-Thin';
+    src: url('./assets/fonts/WorkSans-Thin.ttf');
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: 'WorkSans-Regular';
+    transition: all 200ms ease-in-out;
+}
+.container {
+    padding: 1em;
+    background-color: #000;
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-image: url('./assets/images/captain.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    margin-bottom: 3em;
+}
+
+.header .brand {
+    font-size: 2em;
+    color: #FFF;
+    text-decoration: none;
+    font-family: 'WorkSans-Bold';
+}
+.header .menu {
+    list-style-type: none;
+    display: inline-flex;
+    font-family: 'WorkSans-Thin';
+    margin: 0px;
+    padding: 0px;
+    position: center;
+}
+.header .menu > a {
+    text-decoration: none;
+    color: #FFF;
+    margin: 0 1em;
+    position: center;
+}
+
+.tagline {
+    margin: 0px;
+    margin-top: 3em;
+    color: #FFF;
+    font-size: 7em;
+    font-family: 'WorkSans-Bold';
+    text-shadow: 10px 0px 40px rgb(227, 41, 16);
+}
+.subtag {
+    margin: 0px;
+    color: white;
+}
+
+.karakter-page {
+    padding: 1em;
+    width: 70%;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2em;
+}
+.karakter-page .card {
+    border-radius: 20px;
+    background-color: rgb(179, 21, 0);
+    box-shadow: 10px 10px 10px rgba(0,0,0,2);
+}
+.karakter-page .cover {
+    height: 250px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-position: center;
+    background-size: cover;
+}
+.karakter-page .footer {
+    font-family: 'WorkSans-Regular';
+    padding: 1em;
+    text-align: center;
+}
+
+/*
+FOR MOBILE
+*/
+@media (max-width: 700px) {
+    .container {
+        width: auto;
+    }
+    .header {
+        display: block;
+        text-align: center;
+        font-size: 1em;
+        padding: 0px;
+    }
+    .header .menu > a {
+        font-size: .5em;
+    }
+
+    .tagline {
+        font-size: 3em;
+    }
+    .karakter-page {
+        width: 80%;
+        margin: 0 auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .karakter-page .cover {
+        height: 10em;
+    }
+    .karakter-page .footer {
+        font-size: .7em;
+    }
+}
